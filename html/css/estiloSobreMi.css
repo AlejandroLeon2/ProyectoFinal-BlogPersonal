@@ -1,0 +1,99 @@
+body {
+    font-family: 'JetBrains Mono', Arial, sans-serif;
+    text-align: left;
+}
+
+header {
+    background-color: #D8D9DA;
+    padding: 0.25rem 0;
+    text-align: center;
+}
+
+nav{
+    background-color: #272829; 
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration:none; 
+    font-weight: bold;
+} 
+nav a:hover { 
+    text-decoration: underline;
+    background-color: #334257; 
+}
+
+a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+section p {
+    text-align: center;
+}
+
+section p a {
+    color: #333;
+}
+
+section ul li {
+    text-align: center;
+    list-style: none;
+}
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.mi-clase {
+    color: black;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 0.7rem 1.5rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+footer {
+    background-color: #D8D9DA;
+    padding: 0.25rem 0;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}

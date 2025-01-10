@@ -1,17 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mi</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estiloSobreMi.css">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css\estilos.css">
+    <title>Sobre mi</title>
 </head>
 <body>
+    <header>
+        <h1>Sobre mí</h1>
+    </header>
+    
     <nav> 
         <a href="index.html">Inicio</a> 
         <a href="Sobremi.html">Sobre mi</a>
         <a href="Blog.html">Blog</a> 
         <a href="Contacto.html">Contacto</a> 
     </nav>
+
+    <div class="container">
+        <section>
+            <h2>¡Hola! Vivo para programar</h2>
+            <p>Mi nombre es Ignacio Fuentes. Soy un programador especializado en el desarrollo web, dominando los lenguajes de <strong>HTML, CSS y JavaScript</strong>. Mi pasión por la tecnología y la programación me ha llevado a trabajar en proyectos interesantes y a aprender constantemente nuevas habilidades.</p>
+        </section>
+    
+        <section>
+            <h2>Experiencia profesional</h2>
+            <ul>
+                <li>Desarrollador web en <strong>Interbank</strong> (8 años).</li>
+                <li>Freelancer en desarrollo de sitios web responsivos y dinámicos.</li>
+                <li>Participación en proyectos de código abierto para la comunidad de desarrolladores.</li>
+            </ul>
+        </section>
+    
+        <section>
+            <h2>Educación</h2>
+            <ul>
+                <li>Licenciatura en Ingeniería de Sistemas en <strong>PUCP</strong>.</li>
+                <li>Certificaciones en desarrollo web y programación por <strong>Google</strong>.</li>
+            </ul>
+        </section>
+    
+        <section>
+            <h2>Hobbies</h2>
+            <p>Cuando no estoy programando, me gusta:</p>
+            <ul>
+                <li>Jugar videojuegos y explorar nuevas tecnologías.</li>
+                <li>Leer libros de ciencia ficción y tecnología.</li>
+                <li>Practicar deportes al aire libre, como fútbol y ciclismo.</li>
+            </ul>
+        </section>
+    
+        <section>
+            <h2>Contacto</h2>
+            <p>Puedes contactarme a través de mi correo electrónico: <a href="mailto:igfuentes@gmail.com">igfuentes@gmail.com</a></p>
+
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <Button>Enviar</Button>
+
+            </form>
+        </section>
+
+        <section>
+            <p>
+                                                      
+            </p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Ignacio Fuentes. Todos los derechos reservados.</p>
+    </footer>
+    
 </body>
