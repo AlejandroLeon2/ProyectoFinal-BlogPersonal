@@ -9,74 +9,89 @@
     <title>Sobre mi</title>
 </head>
 <body>
-    <header>
-        <h1>Sobre mí</h1>
-    </header>
     
-    <nav> 
-        <a href="index.html">Inicio</a> 
-        <a href="Sobremi.html">Sobre mi</a>
-        <a href="Blog.html">Blog</a> 
-        <a href="Contacto.html">Contacto</a> 
-    </nav>
+    <header>
+        <p>Sobre mí</p>
+    </header>
+
+    <section class="nav">
+        <nav class="nav2">
+            <a href="index.html">Inicio</a> 
+            <a href="Sobremi.html">Sobre mi</a>
+            <a href="Blog.html">Blog</a> 
+            <a href="Contacto.html">Contacto</a> 
+        </nav>
+    </section>
 
     <div class="container">
-        <section>
-            <h2>¡Hola! Vivo para programar</h2>
-            <p>Mi nombre es Ignacio Fuentes. Soy un programador especializado en el desarrollo web, dominando los lenguajes de <strong>HTML, CSS y JavaScript</strong>. Mi pasión por la tecnología y la programación me ha llevado a trabajar en proyectos interesantes y a aprender constantemente nuevas habilidades.</p>
+        
+        <section class="bio">
+            <section class="bio2">
+            <h3 class="name">Ignacio Fuentes</h3>
+            <h1>¡Vivo para programar!</h1>
+            <p class="description">Soy un programador especializado en el desarrollo web, dominando los lenguajes de HTML, CSS y JavaScript.
+                <br><br>Mi pasión por la tecnología y la programación me ha llevado a trabajar en proyectos interesantes y a aprender constantemente nuevas habilidades.</br>
+            </p>
+            </section>
+
+            <section class="profilePic">
+                <img src="Imagenes/profilePic.jpg" alt="Foto de perfil" id="profilePic" width="300" height="500">
+            </section>
         </section>
-    
-        <section>
-            <h2>Experiencia profesional</h2>
-            <ul>
-                <li>Desarrollador web en <strong>Interbank</strong> (8 años).</li>
-                <li>Freelancer en desarrollo de sitios web responsivos y dinámicos.</li>
-                <li>Participación en proyectos de código abierto para la comunidad de desarrolladores.</li>
-            </ul>
-        </section>
-    
-        <section>
+
+        <section class="eduexp">
+        <section class="education">
             <h2>Educación</h2>
-            <ul>
-                <li>Licenciatura en Ingeniería de Sistemas en <strong>PUCP</strong>.</li>
-                <li>Certificaciones en desarrollo web y programación por <strong>Google</strong>.</li>
-            </ul>
+            <p>Licenciado en Ingeniería de Sistemas por la <strong>PUCP</strong>, con certificaciones en desarrollo web y programación por <strong>Google</strong>.</p>
+            <section class="logos">
+            <img src="Imagenes/pucpLogo.png" alt="pucp_logo" class="pucp" width="140" height="70">
+            <img src="Imagenes/googleLogo.png" alt="google_logo" class="google" width="120" height="40">
+            </section>
         </section>
-    
-        <section>
+   
+        <section class="exp">
+            <h2>Experiencia laboral</h2>
+            <p>Desarrollador web en <strong>Interbank</strong> por cuatro años, freelancer especializado en sitios web responsivos y dinámicos, y colaborador en proyectos de código abierto para la comunidad de desarrolladores.</p>
+            <section class="logos">
+            <img src="Imagenes/ibkLogo.png" alt="interbank_logo" class="ibk" width="160" height="40">
+            <img src="Imagenes/githubLogo.png" alt="github_logo" class="github" width="167" height="60">
+            </section>
+        </section>
+        </section>
+        
+        <section class="hobbiebox">
+        <section class="hobbie">
             <h2>Hobbies</h2>
-            <p>Cuando no estoy programando, me gusta:</p>
-            <ul>
-                <li>Jugar videojuegos y explorar nuevas tecnologías.</li>
-                <li>Leer libros de ciencia ficción y tecnología.</li>
-                <li>Practicar deportes al aire libre, como fútbol y ciclismo.</li>
-            </ul>
+            <p>
+                Aunque la programación ocupa gran parte de mi tiempo, también disfruto dedicarme a otras actividades que me inspiran y me mantienen activo:</br>
+                <br>🎮 Videojuegos y tecnología: Me fascina explorar mundos virtuales y mantenerme al día con las últimas innovaciones tecnológicas.</br>
+                <br>📖 Ciencia ficción y tecnología: Los libros son mi ventana a futuros imaginarios y a conocimientos que me inspiran a pensar fuera de la caja.</br>
+                <br>⚽🚴‍♂️ Deportes al aire libre: El fútbol y el ciclismo son mis aliados para mantener el equilibrio entre el trabajo y la vida personal.</br>
+            </p>
+        </section>
         </section>
     
-        <section>
-            <h2>Contacto</h2>
-            <p>Puedes contactarme a través de mi correo electrónico: <a href="mailto:igfuentes@gmail.com">igfuentes@gmail.com</a></p>
+        <section class="contactbox">
+            <section class="contact">
+            <p>Si tienes alguna duda...</p>
+            </section>
+
+            <br></br>
 
             <form>
                 <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" placeholder="Introduce tu nombre" required>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="Introduce tu email"required>
     
                 <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" required></textarea>
+                <textarea id="message" name="message" placeholder="Introduce tu mensaje"required></textarea>
 
                 <Button>Enviar</Button>
-
             </form>
         </section>
 
-        <section>
-            <p>
-                                                      
-            </p>
-        </section>
     </div>
     
     <footer>
