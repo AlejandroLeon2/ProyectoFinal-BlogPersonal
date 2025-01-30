@@ -1,57 +1,101 @@
 <!DOCTYPE html>
-<html lang="es-pe">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css\estilos.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio</title>
+<link rel="stylesheet" href="blog.css">
 </head>
 <body>
-    <header>
-        <h1>Blog</h1>
-    </header>
-    <nav> 
-        <a href="index.html">Inicio</a> 
-        <a href="Sobremi.html">Sobre mi</a>
-        <a href="Blog.html">Blog</a> 
-        <a href="Contacto.html">Contacto</a> 
+<header>
+    <nav>
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Sobre mí</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Portafolio</a></li>
+    </ul>
     </nav>
+</header>
 
-    <h2>Iniciar en html desde cero.</h2>
-    <a href="https://developer.mozilla.org/es/docs/Learn_web_development/Core/Structuring_content"><img src="Imagenes/maxresdefault.jpg" width="400" height="300">  </a>
-    <p>
-        Nomada 2025-01-06
-    </p>
-    <p>
-        HTML es un lenguaje de marcado esencial para el desarrollo web porque nos permite definir la estructura de la página web, el contenido que se va a mostrar en el navegador. Sus siglas significan "HyperText Markup Language" en inglés (Lenguaje de Marcado de Hipertexto).
-        Introducción a HTML, historia y evolución de html, Esctructura basica de un documento HTML, elementos mas comunes.
-    </p>
+<main>
+    <div class="container">
+        <h1>Categorías</h1>
+        <div class="categories">
+            <div class="circle" style="border-color: blue;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" alt="C">
+                <p>C</p>
+            </div>
+            <div class="circle" style="border-color: red;">
+                <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java">
+                <p>JAVA</p>
+            </div>
+            <div class="circle" style="border-color: darkblue;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++">
+                <p>C++</p>
+            </div>
+            <div class="circle" style="border-color: rgb(243, 243, 86);">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python">
+                <p>PYTHON</p>
+            </div>
+            <div class="circle" style="border-color: black;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript">
+                <p>JAVASCRIPT</p>
+            </div>
+            <div class="circle" style="border-color: orange;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg" alt="Rust">
+                <p>RUST</p>
+            </div>
+            <div class="circle" style="border-color: lightblue;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg" alt="Golang">
+                <p>GOLANG</p>
+            </div>
+        </div>
+    </div>
 
-    <h2>Iniciar en CSS desde cero.</h2>
-
-    <a href="https://developer.mozilla.org/es/docs/Learn_web_development/Core/Styling_basics"><img src="Imagenes/sddefault.jpg" width="400" height="350"></a>
-    <p>
-        Nomada 2025-01-08
-    </p>
-    <p>
-        CSS son las siglas en inglés de Cascading Style Sheets, que significa “hojas de esilo en cascada”. Es un lenguaje que se usa para estilizar elementos escritos en un lenguaje de marcado como HTML.
-        Introducción a CSS, historia y evolucion de css, sintaxis basica y tipos de css (inline, internal, external), seleccion de elementos y uso de selectores basicos, 
-    </p>
-
-    <h2>Iniciar en Java Script desde cero.</h2>
-    <a href="https://developer.mozilla.org/es/docs/Learn_web_development/Core/Scripting" class="post"><img src="Imagenes/hq720.jpg" width="400" height="300"></a>
-
-    <p>
-        Nomada 2025-01-10
-    <p>
-    <p>
-        Java Script es un lenguaje de programación interpretado utilizado en el lado del cliente (front-end) para dotar de mejoras dinámicas e interactivas a las páginas web.
-        Introduccion a Java Script, historia y evolucion de Java Script, configuració del entorno de desarrollo, primeros pasos: sintaxis básica y estructura del lenguaje.
-    </p>
+    <section class="articulos">
+    <article>
+        <h3>Iniciar en HTML desde cero</h3>
+        <img src="imagenes1/html.jpg" alt="HTML Curso" width="800" height="800">
+        <p>HTML es un lenguaje de marcado esencial para el desarrollo web porque nos permite definir la estructura de la página web, el contenido que se va a mostrar en el navegador. </p>
+    </article>
+<article>
+        <h3>Iniciar en CSS desde cero</h3>
+        <img src="imagenes1/css.jpg" alt="CSS Curso">
+        <p> CSS son las siglas en inglés de Cascading Style Sheets, que significa “hojas de esilo en cascada”. Es un lenguaje que se usa para estilizar elementos escritos en un lenguaje de marcado como HTML.</p>
+        </article>
+    <article>
+        <h3>Iniciar en JavaScript desde cero</h3>
+        <img src="imagenes1/js.jpg" alt="JavaScript Curso">
+        <p>Java Script es un lenguaje de programación interpretado utilizado en el lado del cliente (front-end) para dotar de mejoras dinámicas e interactivas a las páginas web.
+        </p>
+    </article>
+    </section>
     <footer>
+        <div class="footer-section">
+            <div class="social-media">
+                <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="youtube.png" alt="YouTube"></a>
+                <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+            </div>
+            <div class="buscar">
+                <h3>Buscar</h3>
+                <ul>
+                    <li><a href="#">html</a></li>
+                    <li><a href="#">Portafolio</a></li>
+                    <li><a href="#">css</a></li>
+                    <li><a href="#">Design systems</a></li>
+                </ul>
+            </div>
+            <div class="contacto">
+                <h3>Contacto</h3>
+                <p>Email: Correo@gmail.com</p>
+                <p>Teléfono: +51 999999999</p>
+            </div>
+        </div>
         <p>&copy; 2025 Ignacio Fuentes. Todos los derechos reservados.</p>
-        <p>Sígueme en <a href="https://www.youtube.com/">Youtube</a> y <a href="https://www.instagram.com">Instagram</a></p>
     </footer>
+
+</main>
 </body>
 </html>
