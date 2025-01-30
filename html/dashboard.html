@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/dashboar.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>Dashboard</h2>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Inicio</a></li>
+                <li><a href="#" onclick="showSection('reports')">Reportes</a></li>
+                <li><a href="#" onclick="showSection('settings')">Configuración</a></li>
+                <li><a href="index.html">Ver Blog</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <section id="administracion" class="section active">
+                <h2>Inicio</h2>
+                <p>Bienvenido al panel de control.</p>
+            </section>
+            <section id="addblog" class="section">
+                <h2>Gestionar Blogs</h2>
+                <p>Aquí puedes ver los blogs.</p>
+            </section>
+            <section id="settings" class="section">
+                <h2>Configuración</h2>
+                <p>Aquí puedes cambiar la configuración.</p>
+            </section>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
