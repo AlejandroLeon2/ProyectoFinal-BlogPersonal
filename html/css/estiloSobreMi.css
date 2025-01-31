@@ -209,12 +209,67 @@ button:hover {
     background-color: #444;
 }
 
-footer {
+.site-footer {
     background-color: #272829;
     color: white;
-    padding: 10px 0px;
+    padding: 3rem 1rem;
+    margin-top: 1rem;
+}
+
+.footer-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.redes-sociales .social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.redes-sociales img {
+    width: 35px;
+    height: 35px;
+    transition: opacity 0.3s;
+}
+
+.redes-sociales img:hover {
+    opacity: 0.8;
+}
+
+.categoria-lista {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.categoria-lista li {
+    margin-bottom: 0.5rem;
+}
+
+.categoria-lista a {
+    color: white;
+    text-decoration: none;
+}
+
+.info-contacto address {
+    font-style: normal;
+    margin-top: 1rem;
+}
+
+.info-contacto a {
+    color: white;
+    text-decoration: none;
+}
+
+.copyright {
     text-align: center;
-    border-top: 2px solid white;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #ffffff1a;
 }
 
 @media (max-width: 768px) {

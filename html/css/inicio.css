@@ -186,40 +186,68 @@ header .imagen-portada {
     gap: 15px;
 }
 
-footer {
+.site-footer {
     background-color: #272829;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    width: 100%;
+    color: white;
+    padding: 3rem 1rem;
+    margin-top: 4rem;
 }
 
-.footer-section {
+.footer-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.redes-sociales .social-links {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
-.footer-section .social-media a {
-    margin: 0 10px;
+.redes-sociales img {
+    width: 35px;
+    height: 35px;
+    transition: opacity 0.3s;
 }
 
-.footer-section .buscar ul {
-    text-align: left;
+.redes-sociales img:hover {
+    opacity: 0.8;
+}
+
+.categoria-lista {
     list-style: none;
-    padding: 0;
+    margin-top: 1rem;
 }
 
-.footer-section .buscar ul li {
-    margin-bottom: 5px;
+.categoria-lista li {
+    margin-bottom: 0.5rem;
 }
 
-.footer-section .buscar ul li a {
-    color: #fff;
+.categoria-lista a {
+    color: white;
     text-decoration: none;
 }
 
+.info-contacto address {
+    font-style: normal;
+    margin-top: 1rem;
+}
+
+.info-contacto a {
+    color: white;
+    text-decoration: none;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #ffffff1a;
+}
 /* Estilos responsivos */
 @media (max-width: 840px) {
 

@@ -102,7 +102,7 @@ body{
 }
 
 .site-footer {
-    background: var(--color-primario);
+    background-color: #272829;
     color: white;
     padding: 3rem 1rem;
     margin-top: 4rem;
