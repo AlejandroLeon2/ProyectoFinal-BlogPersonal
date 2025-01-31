@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Blog Personal</title>
+    <link href="css/dashboar.css" rel="stylesheet">
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="sidebar">
+        <header class="sidebar-header">
+            <h2>dashboard</h2>
+        </header>
+        <ul class="nav-links">
+            <li><a href="#" onclick="showEditor()">Nuevo Post</a></li>
+            <li><a href="#" onclick="showPosts()">Ver Posts</a></li>
+            <li><a href="#" onclick="showStats()">Estadísticas</a></li>
+            <li><a href="index.html" >Ver Pagina</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <section class="editor-container" id="editorContainer">
+            <h2>Nuevo Post</h2>
+            <form id="postForm">
+                <label for="postTitle">Título del post</label>
+                <input type="text" id="postTitle" maxlength="40" placeholder="Título del post" required>
+                
+                <label for="postDescription">Descripción del post</label>
+                <textarea id="postDescription" maxlength="55" placeholder="Descripción del post" required></textarea>
+                
+                <label for="postImage">Imagen de portada</label>
+                <input type="file" id="postImage" accept="image/*" required>
+                
+                <label for="postCategory">Categoría</label>
+                <select id="postCategory" required>
+                    <option value="">Selecciona una categoría</option>
+                    <option value="Lenguajes de Programación">Lenguajes de Programación</option>
+                    <option value="html">Html</option>
+                    <option value="Css">Css</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="Hobbies">Hobbies</option>
+                    <option value="Tecnología">Tecnología</option>
+                    <option value="Ciencia">Ciencia</option>
+                    <option value="Arte">Arte</option>
+                </select>
+                
+                <label for="editor">Contenido del post</label>
+                <div id="editor"></div>
+                
+                <div class="post-actions">
+                    <button class="btn btn-primary" type="button" onclick="savePost()">Guardar</button>
+                    <button class="btn" type="button" onclick="clearEditor()">Cancelar</button>
+                </div>
+                <div id="formErrors"></div>
+            </form>
+        </section>
+
+        <section class="posts-grid" id="postsGrid" style="display: none;">
+            <h2>Ver Posts</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Descripción</th>
+                        <th>Categoría</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="postsTableBody"></tbody>
+            </table>
+        </section>
+
+        <section class="stats-container" id="statsContainer" style="display: none;">
+            <h2>Estadísticas</h2>
+            <div id="generalStats"></div>
+        </section>
+    </main>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="scripts/Quill.js"></script>
+    <script src="scripts/dashboard.js"></script>
+</body>
+</html>

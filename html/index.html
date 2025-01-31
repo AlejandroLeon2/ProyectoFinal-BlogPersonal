@@ -5,64 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/inicio.css">
 </head>
 <body>
     <header>
-        <h1>Bienvenido a mi Blog Personal</h1>
-    </header>
-    <nav> 
-        <a href="index.html">Inicio</a> 
-        <a href="Sobremi.html">Sobre mi</a>
-        <a href="Blog.html">Blog</a> 
-        <a href="Contacto.html">Contacto</a> 
-    </nav>
-    <main>
-        <section>
-            <h2>Sobre mi</h2>
-            <p>
-                Mi nombre es Ignacio Fuentes, soy un apasionado de la tecnología y la programación. Me encanta compartir mis conocimientos con los demás y ayudar a las personas a iniciarse en el mundo de la programación.
-            </p>
-            <p>
-                En este blog encontrarás tutoriales, tips y trucos sobre programación, desarrollo web, diseño gráfico y mucho más. ¡Espero que te guste!
-            </p>
+        <nav>
+            <ul>
+                <li><a href="adminLogin.html">Inicio</a></li>
+                <li><a href="Sobremi.html">Sobre mí</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        <section id="portada">
+            <div class="texto-portada">
+                <h1>&lt; &gt;Hello, World!&lt; /&gt;</h1>
+                <p>Mi nombre es Ignacio Fuentes, soy un apasionado de la tecnología y la programación. Me encanta compartir mis conocimientos con los demás y he creado este espacio para hacerlo. Aquí encontrarás información sobre desarrollo web, diseño gráfico y mucho más. ¡Espero que te guste!</p>
+            </div>
+            <img src="Imagenes/ign.png" alt="Foto de Ignacio Fuentes" class="imagen-portada">
         </section>
-        <section>
-            <h2>Últimas Publicaciones</h2>
-            <div class="cards">
-                <div class="card">
-                    <h3>html desde cero</h3>
-                    <a href="Blog.html"><img src="Imagenes/maxresdefault.jpg" width="300" height="100"></a>
-                    <p1>Resumen de la publicación ...</p1>
-                    <a href="Blog.html">Leer más</a>
-                </div>
-                <div class="card">
-                    <h3>CSS desde cero</h3>
-                    <a href="Blog.html"><img src="Imagenes/sddefault.jpg" width="300" height="100"></a>
-                    <p1>Resumen de la publicación ...</p1>
-                    <a href="Blog.html">Leer más</a>
-                </div>
-                <div class="card">
-                    <h3>JavaScript desde cero</h3>
-                    <a href="Blog.html"><img src="Imagenes/hq720.jpg" width="300" height="100"></a>
-                    <p1>Resumen de la publicación ...</p1>
-                    <a href="Blog.html">Leer más</a>
-                </div>
+        <div class="cuadrado cuadrado4"></div>
+        <div class="cuadrado cuadrado1"></div>
+        <div class="cuadrado cuadrado2"></div>
+        <div class="cuadrado cuadrado3"></div>
+    </header>
+    <main>
+        <section id="publicaciones">
+            <h2>Últimas publicaciones</h2>
+            <div class="publicaciones">
+                <article class="publicacion">
+                    <h3>HTML desde 0</h3>
+                    <p>Aprende HTML desde cero con este tutorial completo.</p>
+                    <a href="#">Ver</a>
+                </article>
+                <article class="publicacion">
+                    <h3>CSS desde 0</h3>
+                    <p>Domina CSS con esta guía paso a paso.</p>
+                    <a href="#">Ver</a>
+                </article>
+                <article class="publicacion">
+                    <h3>JavaScript desde 0</h3>
+                    <p>Domina JavaScript con esta guía paso a paso.</p>
+                    <a href="#">Ver</a>
+                </article>
             </div>
         </section>
-        <section>
-            <h2>Contacto</h2> 
+        <section id="contenido">
+            <div class="proyectos">
+                <h2>Proyectos</h2>
+                <article class="destacados">
+                    <h3>Tetris C++</h3>
+                    <img src="Imagenes/tetris.jpg" alt="Proyecto Tetris en C++">
+                    <p>Un proyecto de Tetris desarrollado en C++.</p>
+                    <a href="#">Ver</a>
+                </article>
+                <article class="destacados">
+                    <h3>Sudoku C++</h3>
+                    <img src="Imagenes/sudoku.jpg" alt="Proyecto Sudoku en C++">
+                    <p>Un proyecto de Sudoku desarrollado en C++.</p>
+                    <a href="#">Ver</a>
+                </article>
+                <article class="destacados">
+                    <h3>Blog Personal</h3>
+                    <img src="Imagenes/personal-blog.webp" alt="Proyecto Blog Personal">
+                    <p>Un proyecto de blog personal desarrollado en C++.</p>
+                    <a href="#">Ver</a>
+                </article>
+            </div>
             <div class="contacto">
-                <p>Si tienes alguna duda, sugerencia o simplemente quieres saludar, no dudes en ponerte en contacto conmigo a través de mis redes sociales o enviándome un correo electrónico.</p>
-                <a href="Contacto.html">
-                    <Button>contacto</Button>
-                </a>
-            </div>  
+                <h2>Contacto</h2>
+                <form>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" placeholder="Introduce tu nombre" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Introduce tu email"required>
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" placeholder="Introduce tu mensaje"required></textarea>
+                    <Button>Enviar</Button>
+                </form>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2025 Ignacio Fuentes. Todos los derechos reservados.</p>
-        <p>Sígueme en <a href="https://www.youtube.com/">Youtube</a> y <a href="https://www.instagram.com">Instagram</a></p>
+    <footer class="site-footer">
+        <div class="footer-contenido">
+            <section class="redes-sociales">
+                <h3>Sígueme</h3>
+                <div class="social-links">
+                    <a href="#"><img src="Imagenes/instagram.png.webp" alt="Instagram"></a>
+                <a href="#"><img src="Imagenes/youtube.png" alt="YouTube"></a>
+                <a href="#"><img src="Imagenes/R.png" alt="LinkedIn"></a>
+                </div>
+            </section>
+
+            <section class="categorias">
+                <h3>Categorías</h3>
+                <ul class="categoria-lista">
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">Sistemas de Diseño</a></li>
+                </ul>
+            </section>
+
+            <section class="info-contacto">
+                <h3>Contacto</h3>
+                <address>
+                    <p>Email: <a href="mailto:correo@gmail.com">correo@gmail.com</a></p>
+                    <p>Teléfono: <a href="tel:+51999999999">+51 999 999 999</a></p>
+                </address>
+            </section>
+        </div>
+        
+        <p class="copyright">&copy; 2025 Ignacio Fuentes. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>

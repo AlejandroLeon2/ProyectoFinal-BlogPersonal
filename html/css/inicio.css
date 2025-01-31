@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f2f1;
+}
+
+body section h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+header {
+    background-color: #272829;
+    height: 43.8em;
+    width: 100%;
+    color: #fff;
+    margin: 0 0 12% 0;
+}
+
+header nav {
+    justify-content: center;
+    padding: 10px ;
+    display: inline;
+    position: relative;
+    z-index: 2;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .cuadrado {
+    background-color: #61677a;
+    position: absolute;
+    z-index: 1;
+}
+
+header .cuadrado1 {
+    width: 5rem;
+    height: 7rem;
+    left: 50px;
+    top: 1px;
+}
+header .cuadrado4 {
+    width: 5rem;
+    height: 5rem;
+    left: 140px;
+    top: 1px;
+}
+
+header .cuadrado2 {
+    width: 16rem;
+    height: 28rem;
+    right: 100px;
+    top: 1px;
+}
+
+header .cuadrado3 {
+    width: 16rem;
+    height: 28rem;
+    right: 220px;
+    bottom: 0px;
+}
+
+header #portada {
+    margin: 4%;
+    content: 1px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content:space-around
+}
+
+header .texto-portada {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+}
+
+header .texto-portada h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+header .texto-portada p {
+    width:34em;
+    font-size: 0.9em;
+    text-align: justify;
+}
+
+header .imagen-portada {
+   
+    width: 17rem;
+    height: 27rem;
+    border-radius: 110px;
+}
+
+#publicaciones {
+    justify-content: center;
+}
+
+#publicaciones .publicaciones {
+    height: 25em;
+    display: flex;
+    border-radius: 20px;
+}
+
+#publicaciones .publicacion {
+    margin: 5%;
+    padding: 20px;
+    background-color: #d8d9da;
+    border-radius: 20px;
+    width: 50%;
+}
+
+#contenido {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 5%;
+    justify-items: center;
+}
+
+.destacados{
+    justify-items: center;
+    width: 100%;
+    height: 20rem;
+    max-width: 70%; /* Ancho máximo del contenedor */
+    max-height: 90%;
+    overflow: hidden;
+
+}
+.destacados img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    max-height:50% ;
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+}
+.proyectos {
+    background-color: #61677a;
+    color: #272829;
+    border-radius: 20px;
+    border: #f3f2f1;
+    width: 40%;
+    margin-right: 2%;
+    justify-items: center;
+}
+
+.proyectos article {
+    
+    margin: 10px;
+    padding: 20px;
+    background-color: #d8d9da;
+    color: #272829;
+    border-radius: 20px;
+}
+
+.contacto {
+    background-color: #272829;
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 30%;
+    height: 25rem;
+}
+
+.contacto form {
+    display: grid;
+    gap: 15px;
+}
+
+.site-footer {
+    background-color: #272829;
+    color: white;
+    padding: 3rem 1rem;
+    margin-top: 4rem;
+}
+
+.footer-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.redes-sociales .social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.redes-sociales img {
+    width: 35px;
+    height: 35px;
+    transition: opacity 0.3s;
+}
+
+.redes-sociales img:hover {
+    opacity: 0.8;
+}
+
+.categoria-lista {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.categoria-lista li {
+    margin-bottom: 0.5rem;
+}
+
+.categoria-lista a {
+    color: white;
+    text-decoration: none;
+}
+
+.info-contacto address {
+    font-style: normal;
+    margin-top: 1rem;
+}
+
+.info-contacto a {
+    color: white;
+    text-decoration: none;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #ffffff1a;
+}
+/* Estilos responsivos */
+@media (max-width: 840px) {
+
+    header {
+        background-color: #272829;
+        height: 35.8em;
+        width: 100%;
+
+    }
+
+    header #portada{
+        display: flex;
+        justify-content:none;
+    }
+
+    header .texto-portada h1 {
+        width: 6em;
+    }
+
+    header .texto-portada p {
+        width:20em;
+    }
+    header .imagen-portada {
+        margin: 0 40px 0 0;
+        width: 12rem;
+        height: 20rem;
+    }
+
+    header .cuadrado {
+        background-color: #61677a;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    header .cuadrado1 {
+        width: 2.6rem;
+        height: 3.5rem;
+        left: 30px;
+        top: 1px;
+    }
+    header .cuadrado4 {
+        width: 2.6rem;
+        height: 2rem;
+        left: 84px;
+        top: 1px;
+    }
+    
+    header .cuadrado2 {
+        width: 10rem;
+        height: 20rem;
+        right: 40px;
+        top: 1px;
+    }
+    
+    header .cuadrado3 {
+        width: 10rem;
+        height: 20rem;
+        right: 120px;
+        bottom: 118px;
+    }
+    #publicaciones .publicaciones {
+        width: 90%;
+        height: 50%;
+        display: flex;
+        border-radius: 20px;
+        flex-direction: column;
+    }
+
+    #publicaciones .publicacion, .proyectos article {
+        width: calc(100% - 40px);
+    }
+
+    #contenido {
+        flex-direction: column;
+    }
+
+    .contacto {
+        justify-content:  center;
+        width: 50%;
+        margin-right: 0;
+    
+    }
+    .proyectos{
+        width: 100%;
+    }
+    
+}

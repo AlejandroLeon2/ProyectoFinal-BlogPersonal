@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #272829;
+    --secondary-color: #61677a;
+    --background-color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: var(--background-color);
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    min-height: 100vh;
+}
+
+.sidebar {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    position: fixed;
+    height: 100vh;
+    width: 250px;
+}
+
+.sidebar-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 15px 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: var(--secondary-color);
+}
+
+.main-content {
+    padding: 40px;
+    margin-left: 250px;
+}
+
+.main-content label{
+    display: flex;
+}
+
+.editor-container, .posts-grid {
+    background-color: #eee7e7d2;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    padding: 30px;
+    width: 70rem;
+    margin-bottom: 30px;
+}
+
+.post-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn {
+    background-color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-edit {
+    background-color: #27ae60;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #000;
+    text-align: left;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#editor {
+    height: 400px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.ql-toolbar {
+    border-radius: 4px 4px 0 0;
+}
+
+.ql-container {
+    border-radius: 0 0 4px 4px;
+}
+.stats-container h2{
+    margin: 2rem;
+    padding: 1rem;
+
+}
+#generalStats{
+    width: 76rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: unset;
+    justify-content:space-evenly;
+    text-align: justify;
+}
+
+#generalStats p{
+    background-color: #272829;
+    color: #fff;
+    border-radius: 1rem;
+    width: 12rem;
+    height: 6rem;
+    margin: rem;
+    padding: 1rem;
+}
