@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Blog</title>
+    <link rel="stylesheet" href="css/estiloEditor.css">
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="editor-container">
+        <h2>Escribe tu publicación</h2>
+        <div id="editor"></div>
+        <button class="btn" onclick="guardarContenido()">Guardar</button>
+        <button class="btn" onclick="cargarContenido()">Cargar</button>
+        <button class="btn" onclick="limpiarContenido()">Limpiar</button>
+    </div>
+    <script src="js/editor.js"></script>
+</body>
+</html>

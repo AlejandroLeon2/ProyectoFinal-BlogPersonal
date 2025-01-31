@@ -1,0 +1,42 @@
+body {
+    background-color: #313335;
+    font-family: 'JetBrains Mono', Arial, sans-serif;
+    display: flex;
+    justify-content: left;
+    align-items: normal;
+    height: 100vh;
+    margin: 0;
+    color: black;
+}
+.editor-container {
+    background-color: #f3f3f3;
+    padding: 1.2rem;
+    width: 100%;
+    height: auto;
+    text-align: left;
+}
+h2 {
+    margin-bottom: 1rem;
+}
+#editor {
+    height: 500px;
+    background: #fff;
+    border-radius: 10px;
+}
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #666;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-top: 10px;
+    display: -moz-grid;
+    width: 5rem;
+
+}
+.btn:hover {
+    background-color: #444;
+}
