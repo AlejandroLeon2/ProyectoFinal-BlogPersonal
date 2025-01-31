@@ -11,24 +11,26 @@ body {
 
 .loginbox {
     background-color: #1b1c1d;
-    padding: 20px;
-    border-radius: 25px;
-    width: 600px;
+    padding: 1.2rem;
+    border-radius: 2rem;
+    width: 15rem;
+    height: 20rem;
     text-align: center;
 }
 
 h1 {
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
 label {
+    width: 80%;
     display: block;
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 0.6rem;
 }
 
 input {
-    width: 95%;
+    width: 90%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
@@ -52,7 +54,7 @@ button:hover {
 
 .forgot-password {
     display: block;
-    margin-top: 10px;
+    margin-top: 1rem;
     color: #ccc;
     text-decoration: none;
 }

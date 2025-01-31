@@ -9,7 +9,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
     if (email === validEmail && password === validPassword) {
         alert('Login exitoso!');
-        window.location.href = 'index.html'; 
+        window.location.href = 'dashboard.html'; 
     } else {
         alert('Correo o contraseña incorrectos.');
     }
