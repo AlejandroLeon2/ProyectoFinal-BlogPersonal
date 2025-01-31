@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
 body {
     background-color: #313335;
-    font-family: 'JetBrains Mono', Arial, sans-serif;
+    font-family: 'JetBrains Mono', monospace;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,52 +13,53 @@ body {
 
 .loginbox {
     background-color: #1b1c1d;
-    padding: 1.2rem;
-    border-radius: 2rem;
-    width: 15rem;
-    height: 20rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 300px;
     text-align: center;
 }
 
 h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 label {
-    width: 80%;
     display: block;
     text-align: left;
-    margin-bottom: 0.6rem;
+    margin: 10px 0 5px;
+    width: 100%;
 }
 
 input {
-    width: 90%;
+    width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 button {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     background-color: #666;
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 4px;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
+    margin-top: 10px;
 }
 
 button:hover {
-    background-color: #444;
+    background-color: #555;
 }
 
 .forgot-password {
     display: block;
-    margin-top: 1rem;
+    margin-top: 15px;
     color: #ccc;
     text-decoration: none;
+    font-size: 0.9em;
 }
 
 .forgot-password:hover {

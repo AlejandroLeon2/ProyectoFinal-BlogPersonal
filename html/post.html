@@ -3,26 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Personal</title>
-    <link rel="stylesheet" href="css/blog.css">
+    <title>Artículo Completo</title>
+    <link rel="stylesheet" href="https://cdn.quilljs.com/1.3.6/quill.snow.css">
+    <link rel="stylesheet" href="css/post.css">
 </head>
 <body>
-    <header class="site-header">
-        <nav class="main-nav">
-            <a href="index.html">Inicio</a>
-            <a href="Sobremi.html">Sobre Mí</a>
-            <a href="Blog.html">Blog</a>
-        </nav>
+    <header class="post-header">
+        <a href="blog.html" class="boton-volver">← Volver al Blog</a>
     </header>
 
-    <main class="contenido-principal">
-        <section class="articulos" id="articulos">
-            <h2 class="seccion-titulo">Últimos Artículos</h2>
-            <div class="posts-container" id="postsContainer">
-            </div>
-        </section>
+    <main class="post-contenido" id="postContent">
     </main>
 
+    <script src="scripts/post.js"></script>
     <footer class="site-footer">
         <div class="footer-contenido">
             <section class="redes-sociales">
@@ -55,7 +48,5 @@
         
         <p class="copyright">&copy; 2025 Ignacio Fuentes. Todos los derechos reservados.</p>
     </footer>
-
-    <script src="scripts/blog.js"></script>
 </body>
 </html>
