@@ -100,7 +100,18 @@ h1 {
     flex-wrap: wrap;
 }
 
-.circle {
+.circle1 img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.circle1 p {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #060606;
+}
+.circle2 {
     width: 100px;
     height: 100px;
     border: 4px solid;
@@ -110,17 +121,154 @@ h1 {
     justify-content: center;
     align-items: center;
     margin: 0px; 
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     overflow: hidden;
+    border-color: rgb(255, 0, 0);
+    
 }
 
-.circle img {
+.circle2 img {
     width: 50px;
     height: 50px;
     margin-bottom: 5px;
 }
 
-.circle p {
+.circle2 p {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #060606;
+}
+.circle3 {
+    width: 100px;
+    height: 100px;
+    border: 4px solid;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px; 
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    border-color: rgb(0, 0, 139);
+    
+}
+
+.circle3 img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.circle3 p {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #060606;
+}
+.circle4 {
+    width: 100px;
+    height: 100px;
+    border: 4px solid;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px; 
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    border-color: rgb(243, 243, 86);
+    
+}
+
+.circle4 img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.circle4 p {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #060606;
+}
+.circle5 {
+    width: 100px;
+    height: 100px;
+    border: 4px solid;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px; 
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    border-color: rgb(0, 0, 0);
+    
+}
+
+.circle5 img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.circle5 p {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #060606;
+}
+.circle6 {
+    width: 100px;
+    height: 100px;
+    border: 4px solid;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px; 
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    border-color: rgb(255, 165, 0);
+    
+}
+
+.circle6 img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.circle6 p {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #060606;
+}
+.circle7 {
+    width: 100px;
+    height: 100px;
+    border: 4px solid;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px; 
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    border-color: rgb(173, 216, 230);
+    
+}
+
+.circle7 img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.circle7 p {
     font-size: 0.9rem;
     margin: 0;
     color: #060606;
